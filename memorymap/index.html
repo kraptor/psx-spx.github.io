@@ -1,0 +1,573 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://psx-spx.consoledev.net/memorymap/" rel="canonical"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-7.1.3" name="generator"/>
+<title>Memory Map - PlayStation Specifications - psx-spx</title>
+<link href="../assets/stylesheets/main.e35208c4.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.ef6f36e2.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+<link href="../css/extra.css" rel="stylesheet"/>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+<script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#memory-map">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="PlayStation Specifications - psx-spx" class="md-header__button md-logo" data-md-component="logo" href=".." title="PlayStation Specifications - psx-spx">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            PlayStation Specifications - psx-spx
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Memory Map
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"></path></svg>
+</label>
+<input class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="blue" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/psx-spx/psx-spx.github.io/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="PlayStation Specifications - psx-spx" class="md-nav__button md-logo" data-md-component="logo" href=".." title="PlayStation Specifications - psx-spx">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+    PlayStation Specifications - psx-spx
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/psx-spx/psx-spx.github.io/" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Memory Map
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Memory Map
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#memory-map_1">
+    Memory Map
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#additional-memory-not-mapped-to-the-cpu-bus">
+    Additional Memory (not mapped to the CPU bus)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#kusegkseg0kseg1kseg2-memory-regions">
+    KUSEG,KSEG0,KSEG1,KSEG2 Memory Regions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#i-cache">
+    i-Cache
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#scratchpad">
+    Scratchpad
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#memory-mirrors">
+    Memory Mirrors
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#memory-exceptions">
+    Memory Exceptions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#write-queue">
+    Write queue
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#more-memory-info">
+    More Memory Info
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../iomap/">
+        I/O Map
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../graphicsprocessingunitgpu/">
+        Graphics Processing Unit (GPU)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../geometrytransformationenginegte/">
+        Geometry Transformation Engine (GTE)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../macroblockdecodermdec/">
+        Macroblock Decoder (MDEC)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../soundprocessingunitspu/">
+        Sound Processing Unit (SPU)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../interrupts/">
+        Interrupts
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dmachannels/">
+        DMA Channels
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../timers/">
+        Timers
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cdromdrive/">
+        CDROM Drive
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../controllersandmemorycards/">
+        Controllers and Memory Cards
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pocketstation/">
+        Pocketstation
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../serialportsio/">
+        Serial Port (SIO)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../expansionportpio/">
+        Expansion Port (PIO)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../memorycontrol/">
+        Memory Control
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../unpredictablethings/">
+        Unpredictable Things
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cpuspecifications/">
+        CPU Specifications
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../kernelbios/">
+        Kernel (BIOS)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../arcadecabinets/">
+        Arcade Cabinets
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cheatdevices/">
+        Cheat Devices
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../psxdevboardchipsets/">
+        PSX Dev-Board Chipsets
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../hardwarenumbers/">
+        Hardware Numbers
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pinouts/">
+        Pinouts
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../aboutcredits/">
+        About &amp; Credits
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cdromvideocdsvcd/">
+        CDROM Video CDs (VCD)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../cdrominternalinfoonpsxcdromcontroller/">
+        CDROM Internal Info on PSX CDROM Controller
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#memory-map_1">
+    Memory Map
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#additional-memory-not-mapped-to-the-cpu-bus">
+    Additional Memory (not mapped to the CPU bus)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#kusegkseg0kseg1kseg2-memory-regions">
+    KUSEG,KSEG0,KSEG1,KSEG2 Memory Regions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#i-cache">
+    i-Cache
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#scratchpad">
+    Scratchpad
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#memory-mirrors">
+    Memory Mirrors
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#memory-exceptions">
+    Memory Exceptions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#write-queue">
+    Write queue
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#more-memory-info">
+    More Memory Info
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/psx-spx/psx-spx.github.io/edit/master/docs/memorymap.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
+</a>
+<h1 id="memory-map">Memory Map</h1>
+<h4 id="memory-map_1">Memory Map</h4>
+<pre><code>  KUSEG     KSEG0     KSEG1
+  00000000h 80000000h A0000000h  2048K  Main RAM (first 64K reserved for BIOS)
+  1F000000h 9F000000h BF000000h  8192K  Expansion Region 1 (ROM/RAM)
+  1F800000h 9F800000h    --      1K     Scratchpad (D-Cache used as Fast RAM)
+  1F801000h 9F801000h BF801000h  8K     I/O Ports
+  1F802000h 9F802000h BF802000h  8K     Expansion Region 2 (I/O Ports)
+  1FA00000h 9FA00000h BFA00000h  2048K  Expansion Region 3 (SRAM BIOS region for DTL cards)
+  1FC00000h 9FC00000h BFC00000h  512K   BIOS ROM (Kernel) (4096K max)
+        FFFE0000h (in KSEG2)     0.5K   Internal CPU control registers (Cache Control)
+</code></pre>
+<p>Additionally, there are a number of memory mirrors.<br/></p>
+<h4 id="additional-memory-not-mapped-to-the-cpu-bus">Additional Memory (not mapped to the CPU bus)</h4>
+<pre><code>  1024K   VRAM (Framebuffers, Textures, Palettes) (with 2KB Texture Cache)
+  512K    Sound RAM (Capture Buffers, ADPCM Data, Reverb Workspace)
+  0.5K    CDROM controller RAM (see CDROM Test commands)
+  16.5K   CDROM controller ROM (Firmware and Bootstrap for MC68HC05 cpu)
+  32K     CDROM Buffer (IC303) (32Kx8) (BUG: only two sectors accessible?)
+  128K    External Memory Card(s) (EEPROMs)
+</code></pre>
+<h4 id="kusegkseg0kseg1kseg2-memory-regions">KUSEG,KSEG0,KSEG1,KSEG2 Memory Regions</h4>
+<pre><code>  Address   Name   i-Cache     Write-Queue
+  00000000h KUSEG  Yes         Yes
+  80000000h KSEG0  Yes         Yes
+  A0000000h KSEG1  No          No
+  C0000000h KSEG2  (No code)   No
+</code></pre>
+<p>Kernel Memory: KSEG1 is the normal physical memory (uncached), KSEG0 is a
+mirror thereof (but with cache enabled). KSEG2 is usually intended to contain
+virtual kernel memory, but in the PSX it's containing Cache Control hardware registers.<br/>
+User Memory: KUSEG is intended to contain 2GB virtual memory (on extended MIPS
+processors), the PSX doesn't support virtual memory, and KUSEG simply contains
+a mirror of KSEG0/KSEG1 (in the first 512MB) (trying to access memory in the
+remaining 1.5GB causes an exception).<br/></p>
+<h4 id="i-cache">i-Cache</h4>
+<p>The i-Cache can hold 4096 bytes, or 1024 instructions.<br/>
+It is only active in the cached regions (KUSEG and KSEG0).<br/>
+There are reportedly some restrictions... not sure there... eventually it is
+using the LSBs of the address as cache-line number... so, for example, it
+couldn't simultaneously memorize opcodes at BOTH address 80001234h, AND at
+address 800F1234h (?)<br/></p>
+<h4 id="scratchpad">Scratchpad</h4>
+<p>MIPS CPUs usually have a d-Cache, but, in the PSX, Sony has assigned it as
+what's referenced as the "Scratchpad",  mapped to a fixed memory location at
+1F800000h..1F8003FFh, ie. it's used as Fast RAM, rather than as cache.<br/>
+There \&lt;might&gt; be a way to disable that behavior (via Port FFFE0130h or
+so), but, the Kernel is accessing I/O ports via KUSEG, so activating Data Cache
+would cause the Kernel to access cached I/O ports.<br/>
+The purpose of the scratchpad is to have a more flexible cache system available
+to the programmer. Neither the kernel nor the Sony libraries will try to make use
+of it, so it is therefore completely up for grabs to the programmer. A good example
+would be if you were to write a piece of code that's doing a lot of CRC computation,
+to use the 1KB scratchpad to initially load the CRC lookup tables, which incidentally,
+is exactly 1KB large. Doing this will relieve SDRAM page changes overhead while reading
+the data to checksum linearly, while also keeping the whole CRC code in the i-Cache,
+hence being more optimal than what you'd get with an automatic d-Cache system.</p>
+<h4 id="memory-mirrors">Memory Mirrors</h4>
+<p>As described above, the 512Mbyte KUSEG, KSEG0, and KSEG1 regions are mirrors of
+each other. Additional mirrors within these 512MB regions are:<br/></p>
+<pre><code>  2MB RAM can be mirrored to the first 8MB (strangely, enabled by default)
+  512K BIOS ROM can be mirrored to the last 4MB (disabled by default)
+  Expansion hardware (if any) may be mirrored within expansion region
+  The seven DMA Control Registers at 1F8010x8h are mirrored to 1F8010xCh
+</code></pre>
+<p>The size of the RAM, BIOS, Expansion regions can be configured by software, for
+Expansion Region it's also possible to change base address, see:<br/>
+<a href="../memorycontrol/">Memory Control</a><br/>
+The Scratchpad is mirrored only in KUSEG and KSEG0, but not in KSEG1.<br/></p>
+<h4 id="memory-exceptions">Memory Exceptions</h4>
+<pre><code>  Memory Error ------&gt; Misalignments
+               (and probably also KSEG access in User mode)
+  Bus Error    ------&gt; Unused Memory Regions (including Gaps in I/O Region)
+               (unless RAM/BIOS/Expansion mirrors are mapped to "unused" area)
+</code></pre>
+<h4 id="write-queue">Write queue</h4>
+<p>The MIPS CPU has a 4-words deep pass-through write queue, in order to relieve
+some bus contention when writing to memory. If reading the same memory location
+that just got written into the write queue, it will first be flushed before
+being read back from memory.<br/>
+It is important to realize that the write queue's mechanism is only viable for
+normal memory attached to the main CPU, and that any hardware register state machine
+will get messed up by it.<br/>
+The typical example is the typical JEDEC standard to access flash, which usually does
+the following sequence to read the ID of a flash chip:</p>
+<pre><code class="language-C">    base[0xAAA] = 0xAA;
+    base[0x555] = 0x55;
+    base[0xAAA] = 0x90;
+    uint8_t mnfctrID = base[0x000];
+    uint8_t deviceId = base[0x002];
+</code></pre>
+<p>In this example above, if <code>base</code> is located in a memory segment that has the write queue
+enabled, even if the low level assembly code will do the first 3 stores before doing 2 loads,
+the physical signals sent to that device through the CPU bus will be seen in the sequence:</p>
+<pre><code>store(0xaaa, 0xaa)
+load(0x000)
+store(0x555, 0x55)
+load(0x002)
+store(0xaaa, 0x90)
+</code></pre>
+<p>Therefore, using KSEG1 that disables the write queue is the only way to ensure that the
+operations are done in the proper way.</p>
+<p>The above is valid for most of the hardware connected to the main CPU, such as the CDROM
+controller, exp1, exp2, the SPU, or the GPU. Therefore, using BF80180xh to access the
+CDROM registers is more correct than using 1F80180xh.</p>
+<p>It is noteworthy that the Sony code will still incorrectly use KUSEG as the memory map
+for all hardware registers, and they then spend a lot of time writing 4 dummy values
+somewhere, in order to ensure the write queue has been flushed.</p>
+<p>The SN debugger in contrast is properly using the KSEG1 memory map for all the hardware
+registers, nullifying the need to flush the write queue when accessing it.</p>
+<p>It's also noteworthy that doing ANY KSEG1 access (read OR write) will automatically stall
+the CPU in order to flush the whole write queue before proceeding with the operation.
+Therefore, all BIOS ROM operations will naturally and effectively have the write queue
+disabled, as this code requires the CPU to read from KSEG1 constantly.</p>
+<p>This also means that if using KUSEG for the hardware registers, another method to flush
+the write queue, albeit potentially slightly less efficient, would be to simply read
+the first byte located at BFC00000h. The latter is what is effectively described as the
+official method to flush the write queue in the MIPS handbook. This could be potentially
+useful to flush the write queue all at once, instead of flushing it word by word.</p>
+<h4 id="more-memory-info">More Memory Info</h4>
+<p>For Info on Exception vectors, Unused/Garbage memory locations, I/O Ports,
+Expansion ROM Headers, and Memory Waitstate Control, etc. see:<br/>
+<a href="../iomap/">I/O Map</a><br/>
+<a href="../memorycontrol/">Memory Control</a><br/>
+<a href="../expansionportpio/#exp1-expansion-rom-header">EXP1 Expansion ROM Header</a><br/>
+<a href="../kernelbios/#bios-memory-map">BIOS Memory Map</a><br/>
+<a href="../kernelbios/#bios-memory-allocation">BIOS Memory Allocation</a><br/>
+<a href="../cpuspecifications/#cop0-exception-handling">COP0 - Exception Handling</a><br/>
+<a href="../unpredictablethings/">Unpredictable Things</a><br/></p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a class="md-footer__link md-footer__link--prev" href=".." rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+</div>
+</a>
+<a class="md-footer__link md-footer__link--next" href="../iomap/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              I/O Map
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+          Material for MkDocs
+        </a>
+ ... <a class="link--pdf-download" download href="../psx-spx.pdf" title="PDF">download PDF</a></div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+<script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
+</body>
+</html>
